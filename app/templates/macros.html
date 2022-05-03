@@ -1,0 +1,28 @@
+{% macro displayNewslist(sources_list) %}
+
+{% for popular in sources_list %}
+   <li>{{ popular.id }}</li>
+   <li>{{ popular.name}}</li>
+   <li>{{ popular.desctription}}</li>
+   <li> {{ popular.url}}</li>
+   <li> {{ popular.category}}</li>
+   <li> {{popular.language}}</li>
+   <li> {{popular.country}}</li>
+{% endfor %}  
+
+{% endmacro %}
+
+{% macro displayArticlelist(articles_list) %}
+<div id="articles">
+{% for articles in articles_list %}
+<p>{{articles.title}}</p>
+<p>{{articles.author}}</p>
+<p>{{articles.description}}</p>
+<p>{{articles.content}}</p>
+<p>{{articles.publishedAt}}</p>
+<img src="{{articles.urlToImage}}" alt="">
+<p class="time"> publishedAt:{{articles.publishedAt}}</p>
+{% endfor %}
+
+{% endmacro %}
+</div>
