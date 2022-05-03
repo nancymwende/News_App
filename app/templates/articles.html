@@ -1,5 +1,11 @@
+{% extends 'base.html'%}
 {% import 'macros.html' as macro%}
-
+ {% block navbar %}
+ {% include 'navbar.html' %}
+ {% endblock %}
 {% block content %}
+<marquee direction="right">
+    <h3 class="heading text-dark text-center"> Popular News </h3>
+</marquee>
 {{ macro.displayArticlelist(articles) }}
  {% endblock%}
