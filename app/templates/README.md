@@ -1,26 +1,29 @@
-## News_Hub
+## News_APP
 **3rd May 2022** 
 #### By **Nancy Mwende**
 
 ## ScreenShot
-<img src="">
+
+![nancy](/app/static/CSS/images/news.png)
+![nancy](/app/static/CSS/images/news2.png)
 
 ## Description
-This is a Web Application that allows the user to to order the pizza of his/her choice and get it delivered at his/her desired location within a small given time.
+This is a Web Application that allows a user to read news and articles from various sources.
 
 # Installation / Setup instruction
 
 <ul>
 <li>Open Terminal {Ctrl+Alt+T}</li>
-<li>git clone https://github.com/nancymwende/pizzeria</li>
-<li>cd pizzeria </li>
+<li>git clone<a>https://github.com/nancymwende/News_App</a></li>
+<li>cd NEWS_APP </li>
 <li>code . for VS code to run it</li>
-<li>Go live or start your server</li>
+<li>Go to terminal & run python3 manage.py server..
+copy the link on your terminal to browser</li>
 </ul>
 
 ### Live Link
 
-<a>nancymwende.github.io/pizzeria/</a>
+<a></a>
 
 ## Known Bugs
 
@@ -30,23 +33,21 @@ in case of any please lemmy know.
 ## Technologies Used
 
 <ul>
-<li>JAVASCRIPT</li>
+<li>FLASK</li>
 <li>HTML</li>
 <li>CSS</li>
 <li>BOOTSTRAP</li>
- <li>jQuery</li>
+
 </ul>
 
 ## BDD
-Scroll down to the pizza area
+Go to the browser
 
 <ul>
-<li>Enter your pizza type	e.g meat pizza </li>
-<li>Enter the amount you want e.g Ksh.700</li>
-<li>Enter the crust of your choice e.g cripsy </li>
-<li>Enter your toppings choice</li>
-<li>Press Proceed</li>
-<li> A summation regarding to what you have chose will pop up.
+<li>Click on the sources or articles </li>
+<li>Enter the news and articles of your choice</li>
+<li>Press ReadMore</li>
+<li> A summation of what you want is displayed
 </ul>
 
 ## Support and contact details
@@ -56,7 +57,7 @@ In case of any contributions or questions, email nancy.mwende@student.moringasch
 
  #### MIT LICENCE
 
-Copyright (c) 2021 **Nancy Mwende**
+Copyright (c) 2022 **Nancy Mwende**
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
