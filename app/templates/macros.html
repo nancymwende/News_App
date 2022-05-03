@@ -1,27 +1,45 @@
 {% macro displayNewslist(sources_list) %}
-
+<div id="sources">
+   <div class="row">
 {% for popular in sources_list %}
-   <li>{{ popular.id }}</li>
-   <li>{{ popular.name}}</li>
-   <li>{{ popular.desctription}}</li>
-   <li> {{ popular.url}}</li>
-   <li> {{ popular.category}}</li>
-   <li> {{popular.language}}</li>
-   <li> {{popular.country}}</li>
-{% endfor %}  
+<div class="col-sm-6 col-md-6">
+   <div class="thumbnail">
+      <div class="caption">
+         <p>{{popular.id}}</p>
+         <p>{{popular.name}}</p>
+         <p>{{popular.description}}</p>
+         <p>{{popular.country}}</p>
+         <a href="{{popular.url}}"><button class="btn">ReadMore</button></a>
+         
+      </div>
+   </div>
+</div>
+ 
+{% endfor %}
+</div>
+</div>
 
 {% endmacro %}
 
 {% macro displayArticlelist(articles_list) %}
 <div id="articles">
+<div class="row">
 {% for articles in articles_list %}
+<div class="col-sm-6 col-md-6">
+<div class="thumbnail">
+<div class="caption">
 <p>{{articles.title}}</p>
 <p>{{articles.author}}</p>
 <p>{{articles.description}}</p>
 <p>{{articles.content}}</p>
 <p>{{articles.publishedAt}}</p>
-<img src="{{articles.urlToImage}}" alt="">
+<img src="{{articles.urlToImage}}" alt="" width="20%">
 <p class="time"> publishedAt:{{articles.publishedAt}}</p>
+<a href="{{articles.url}}"><button class="btn">ReadMore</button></a>
+</div>
+</div>
+</div>
 {% endfor %}
+</div>
 </div>
 {% endmacro %}
